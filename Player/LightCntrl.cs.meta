@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 963ba80df0db19046a85173793111a64
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Player: {instanceID: 0}
+  - FlashLight: {instanceID: 0}
+  - lightSource: {instanceID: 0}
+  - Battery: {instanceID: 0}
+  - On: {fileID: 8300000, guid: 3909e8228897d4442ba759af2a4674d6, type: 3}
+  - Off: {fileID: 8300000, guid: 80359380dd706404bacdda2f733b1ef6, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
