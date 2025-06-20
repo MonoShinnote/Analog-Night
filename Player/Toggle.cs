@@ -38,7 +38,7 @@ public class Toggle : MonoBehaviour
             {
                 PlayerCntrl.MoveBack();
             }
-            else if(gameObject.CompareTag("Right") && PlayerCntrl.atDoor)
+            else if(gameObject.CompareTag("Right") && PlayerCntrl.atDoor &&!PlayerCntrl.isMoving)
             {
                 if (PlayerCntrl.InSub)
                 {

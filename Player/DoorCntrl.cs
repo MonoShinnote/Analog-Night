@@ -16,7 +16,7 @@ public class DoorCntrl : MonoBehaviour
     [SerializeField] private AudioClip DoorClosed;
     [SerializeField] private AudioClip DoorLock;
     [SerializeField] private AudioClip DoorBreak;
-    [SerializeField] private AudioClip DoorKnock;
+    [SerializeField] private AudioClip[] DoorKnock;
 
     private AudioSource DoorAudio;
 
@@ -59,7 +59,7 @@ public class DoorCntrl : MonoBehaviour
 
     public void DoorKnocking()
     {
-        DoorAudio.PlayOneShot(DoorKnock, 1);
+        DoorAudio.PlayOneShot(DoorKnock[Random.Range(0,6)], 1);
     }
 
     public IEnumerator DoorAnimation()

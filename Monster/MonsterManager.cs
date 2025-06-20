@@ -26,7 +26,7 @@ public class MonsterManager : MonoBehaviour
     public MonsterAI_Window monsterC;
     public MonsterAi_Spawn monsterD;
     public MonsterAI_Candle_Re monsterE;
-    public MonsterAi_AntiCam monsterF;
+    public MonsterAi_TV monsterF;
 
     public bool HallWayUsed;
     public bool WindowUsed;
@@ -70,7 +70,7 @@ public class MonsterManager : MonoBehaviour
         monsterC = GameObject.Find("MonsterC").GetComponent<MonsterAI_Window>();
         monsterD = GameObject.Find("MonsterD").GetComponent<MonsterAi_Spawn>();
         monsterE = GameObject.Find("MonsterE").GetComponent<MonsterAI_Candle_Re>();
-        monsterF = GameObject.Find("MonsterF").GetComponent<MonsterAi_AntiCam>();
+        monsterF = GameObject.Find("MonsterF").GetComponent<MonsterAi_TV>();
 
         if (isNightmare)
         {

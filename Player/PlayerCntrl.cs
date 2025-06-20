@@ -122,13 +122,13 @@ IEnumerator RotateLeft()
     //Move Toward Door
     public void MoveToDoor()
     {
-        if (!isMoving)
+        if (!isMoving && !isRotating)
         {
             StartCoroutine(MoveToDoorAnimation());
             transform.rotation = Quaternion.Euler(new Vector3(0, 90, 0));
             PlayerAudio.PlayOneShot(WalkSound[Random.Range(0, 2)], 1);
+            isMoving = true;
         }
-        isMoving = true;
     }
     IEnumerator MoveToDoorAnimation()
     {
@@ -170,9 +170,11 @@ IEnumerator RotateLeft()
     //Go to Ritual Room
     public void MoveToSub()
     {
-        //StartCoroutine(RotateRight());
-        StartCoroutine(MoveToSubAnimation());
-        isMoving = true;
+        if (!isMoving)
+        {
+            StartCoroutine(MoveToSubAnimation());
+            isMoving = true;
+        }
     }
     IEnumerator MoveToSubAnimation()
     {
